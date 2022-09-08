@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 /*
 Colors:
 
@@ -7,8 +8,105 @@ White: #FFF
 
 */
 * {
+  padding: 0 auto;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 6em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 20px 0;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  padding: 10px 0;
+  color: #00b172;
+}
+p {
+  padding: 10px 0;
+  font-weight: 300;
+}
+hr {
+  margin: 0 405px;
+  border-top: 3px solid #00b172;
+}
+/* header */
+header {
+  background-image: url(../images/landing.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 1300px;
+  color: white;
 }
 
-#navbar {
+.sticky-bar {
   display: flex;
+  background-color: white;
+  color: black;
+  justify-content: space-between;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+.sticky-bar img {
+  width: 13%;
+}
+.navbar {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-wrapper p {
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+/* section 1 */
+
+#whats-on-spotify img {
+  width: 50%;
+}
+
+.spotify-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons {
+  display: flex;
+  width: 175px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.icons p {
+  color: #1a1a1a;
+}
+/* section 3 */
+
+#kanye {
+  height: 600px;
+  display: flex;
+  padding: 20px 0;
+  background-color: #00b172;
+  color: white;
+  align-items: center;
+}
+#kanye img {
+  width: 50%;
 }
