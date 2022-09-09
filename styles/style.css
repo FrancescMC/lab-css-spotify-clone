@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gotham");
 /*
 Colors:
 
@@ -10,7 +10,7 @@ White: #FFF
 * {
   padding: 0 auto;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "gotham", sans-serif;
 }
 h1 {
   font-size: 6em;
@@ -18,29 +18,19 @@ h1 {
   letter-spacing: 2px;
   padding: 20px 0;
 }
-h2 {
-  text-align: center;
-}
-h3 {
-  padding: 10px 0;
-  color: #00b172;
-}
+
 p {
   padding: 10px 0;
   font-weight: 300;
 }
-hr {
-  margin: 0 405px;
-  border-top: 3px solid #00b172;
-}
+
 /* header */
 header {
   background-image: url(../images/landing.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: auto;
-  height: 1300px;
+  height: 1000px;
   color: white;
 }
 
@@ -52,6 +42,7 @@ header {
   padding: 10px;
   position: sticky;
   top: 0;
+  z-index: ;
 }
 .sticky-bar img {
   width: 13%;
@@ -80,6 +71,13 @@ header {
 #whats-on-spotify img {
   width: 50%;
 }
+#whats-on-spotify h2 {
+  text-align: center;
+}
+#whats-on-spotify hr {
+  margin: 0 520px;
+  border-top: 3px solid #00b172;
+}
 
 .spotify-wrap {
   display: flex;
@@ -100,13 +98,40 @@ header {
 /* section 3 */
 
 #kanye {
-  height: 600px;
-  display: flex;
+  height: 800px;
   padding: 20px 0;
   background-color: #00b172;
+  background-image: url(../images/spotify-icon-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
   color: white;
-  align-items: center;
 }
-#kanye img {
-  width: 50%;
+
+.white-logo {
+  height: 100px;
+}
+
+.image-wrapper {
+  display: flex;
+}
+.image-wrapper img {
+  height: 600px;
+}
+.kanye-text {
+  height: 70%;
+  width: 400px;
+  line-height: 25px;
+}
+.kanye-text hr {
+  margin: 0 50px 0 0;
+  border-bottom: 3px solid;
+}
+.kanye-text h3 {
+  padding: 25px 0;
+}
+.wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
